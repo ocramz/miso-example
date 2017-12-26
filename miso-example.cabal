@@ -20,6 +20,7 @@ library
   hs-source-dirs:      src
   exposed-modules:     Lib
   build-depends:       base >= 4.7 && < 5
+                     , time
                      , miso
 
 executable miso-example
@@ -28,19 +29,20 @@ executable miso-example
   hs-source-dirs:      app
   main-is:             Main.hs
   build-depends:       base
+                     , time
                      , miso
                      , miso-example
 
-test-suite spec
-  default-language:    Haskell2010
-  ghc-options:         -Wall
-  type:                exitcode-stdio-1.0
-  hs-source-dirs:      test
-  main-is:             Spec.hs
-  build-depends:       base
-                     , miso-example
-                     , hspec
-                     , QuickCheck
+-- test-suite spec
+--   default-language:    Haskell2010
+--   ghc-options:         -Wall
+--   type:                exitcode-stdio-1.0
+--   hs-source-dirs:      test
+--   main-is:             Spec.hs
+--   build-depends:       base
+--                      , miso-example
+--                      , hspec
+--                      , QuickCheck
 
 source-repository head
   type:     git
