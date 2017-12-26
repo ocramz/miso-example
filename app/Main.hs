@@ -25,7 +25,7 @@ updateModel act m = case act of
   CurrTime str -> noEff str
 
 main = startApp App{ .. } where
-  model = "Start"
+  model = "X"
   initialAction = Start
   update = updateModel
   view = viewModel
