@@ -33,6 +33,16 @@ executable miso-example
                      , miso
                      , miso-example
 
+executable miso-example-b
+  default-language:    Haskell2010
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  hs-source-dirs:      app
+  main-is:             App1.hs
+  build-depends:       base
+                     , time
+                     , miso
+                     , miso-example
+
 -- test-suite spec
 --   default-language:    Haskell2010
 --   ghc-options:         -Wall

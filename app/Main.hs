@@ -3,7 +3,7 @@
 module Main where
 
 -- import System.Directory -- (getCurrentDirectory, listDirectory)
-import Data.Time (getCurrentTime)
+import Data.Time (UTCTime(..), getCurrentTime)
 
 import Miso 
 import Miso.String hiding (concat)
@@ -40,6 +40,8 @@ viewModel x = div_ [] [
   , button_ [ onClick Start ] [ text "Reset"]
                       ]
 
+
+-- 1 
 
 -- -- | Type synonym for an application model
 -- type Model = Int
