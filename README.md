@@ -1,2 +1,5 @@
 # miso-example
-Example single-page web application using `miso`
+
+[![Build Status](https://travis-ci.org/ocramz/miso-example.png)](https://travis-ci.org/ocramz/miso-example)
+
+TODO Description.
